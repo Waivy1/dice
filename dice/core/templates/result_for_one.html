@@ -1,0 +1,29 @@
+{% extends 'index_page.html' %}
+
+
+{% block content %}
+
+	{% for i in list_of_winners %}
+
+	{{ i.id }}. {{ i.sum }} - {{ i.user }} <br>
+
+	{% endfor %}
+
+
+
+	<a href="/">
+	<button type="button" class="btn btn-outline-primary">Back</button>
+	</a>
+
+{% endblock content %}
+
+
+{% block name_of_page %}
+
+{% endblock name_of_page %}
+
+
+
+  {% block button_buttom %}
+
+{% endblock button_buttom %}
